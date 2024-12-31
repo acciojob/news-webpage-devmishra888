@@ -3,10 +3,80 @@
 <html>
 
 <head>
+
+	    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: #011e29;
+
+    }
+    body{
+        background-color: #f5f5f5;
+    }
+    .latest-news-section{
+        background-color: azure;
+        padding: 5px;
+        margin: 10px;
+        width: 15%;
+        height: 10%;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .Container{
+        display: flex;
+        text-align: center;
+    }
+    .main{
+        background-color: azure;
+        width: 15%;
+        height: 10%;
+    }
+    .pictorial-news-section{
+        display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 10px;
+}
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+	    <h2 class="header">Shaw's News</h2>
+        <div class="Container">
+
+        <div class="latest-news-section">
+            <h3>Latest News Articles</h3>
+            <ul>
+                <li>Article 1</li>
+                <li>Article 2</li>
+                <li>Article 3</li>
+            </ul>
+        </div>
+
+    <div class="main">
+        <h2>Main Article</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Consequatur fuga et accusantium facilis eum commodi. 
+            Officiis nesciunt animi ut qui quo illo pariatur, quam amet delectus, 
+            eius exercitationem explicabo rerum.</p>
+        
+    </div>
+
+    <div class="pictorial-news-section">
+
+        <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/delhi_rains_1674974112847_1674981888135_1674981888135.jpeg" alt="Image_one" width="200px">
+        <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/ADANI-INDIA-GAUTAM-ADANI-0_1675011651023_1675011651023_1675011672003_1675011672003.JPG" alt="Image_two" width="200px">
+        <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/FRANCE-REFORM-PENSIONS-31_1675022359706_1675022359706_1675022383851_1675022383851.JPG" alt="Image_three" width="200px">
+    
+    </div>
+</div>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
