@@ -4,91 +4,92 @@
 
 <head>
 	<style>
-      *{
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
-    .header{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        background-color: #011e29;
-        padding: 10px;
+         body{
+            width: 100vw;
+            height: 100vh;
+            background-color: #f5f5f5;
 
-    }
-		  header{
-        background-color: #011e29;
-    }
-    body{
-        background-color: #f5f5f5;
-    }
-    .latest-news-section{
-        background-color: azure;
-        padding: 5px;
-        margin: 10px;
-        width: 15%;
-        height: 10%;
-        border-radius: 10px;
-        text-align: center;
-    }
-    .Container{
-        display: flex;
-        text-align: center;
-    }
-    .main{
-        background-color: azure;
-        width: 15%;
-        height: 10%;
-    }
-    .pictorial-news-section{
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  gap: 10px;
-  position: absolute;
-  right: 0;
-  padding: 10px;
-  margin: 5px;
-  background-color: green;
-  text-align: center;
-  border-radius: 10px;
-}
+        }
+
+        .header{
+            text-align: center;
+            background-color: #011e29;
+            color: white;
+            padding-bottom:5px ;
+            padding-top: 5px;
+        }
+
+        .container{
+            display: flex;
+            text-align: center;
+            
+        }
+
+        .latest-news-section{
+           
+            flex: 1;
+        
+        }
+
+        .main Article{
+            flex: 2;
+           
+        }
+
+        .pictorial-news-section{
+            flex: 1;
+            margin-top: 5px;
+           border: 1px solid black;
+           padding: 5px;
+           border-radius: 5px;
+           margin-right: 2px;
+           background-color: white;
+        }
+
+
 </style>
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	   <h2 class="header">Shaw's News</h2>
-        <div class="Container">
+	   <header class="header">
+        <h1>Shaw's News</h1>
+    </header>
 
-        <div class="latest-news-section">
-            <h3>Latest News Articles</h3>
-            <ul>
-                <li>Article 1</li>
-                <li>Article 2</li>
-                <li>Article 3</li>
-            </ul>
-        </div>
+    <div class="container">
 
-    <div class="main">
-        <h2>Main Article</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-            Consequatur fuga et accusantium facilis eum commodi. 
-            Officiis nesciunt animi ut qui quo illo pariatur, quam amet delectus, 
-            eius exercitationem explicabo rerum.</p>
-        
-    </div>
+<div class="latest-news-section" style="border: 1px solid black;  margin-top: 5px;  padding: 5px; height: fit-content; margin: 2px; margin-top: 5px; border-radius: 5px; background-color: white;" >
+    <h3>Latest News Articles</h3>
+    <ul>
+    <li>Article 1</li>
+    <li>Article 2</li>
+    <li>Article 3</li>
 
-    <div class="pictorial-news-section">
-
-        <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/delhi_rains_1674974112847_1674981888135_1674981888135.jpeg" alt="Image_one" width="200px">
-        <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/ADANI-INDIA-GAUTAM-ADANI-0_1675011651023_1675011651023_1675011672003_1675011672003.JPG" alt="Image_two" width="200px">
-        <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/FRANCE-REFORM-PENSIONS-31_1675022359706_1675022359706_1675022383851_1675022383851.JPG" alt="Image_three" width="200px">
-    
-    </div>
 </div>
+
+<div class="main Article" style="border: 1px solid black;  margin-top: 5px;  padding: 5px; height: fit-content; margin-right: 2px; border-radius: 5px; background-color: white;">
+<h2>Main Article</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit consectetur praesentium suscipit accusantium quaerat aperiam fugit quis fuga corrupti repudiandae veniam, et, qui sapiente dolor? Minima animi voluptatibus nemo ex.</p>
+
+</ul>
+
+</div>
+
+<div class="pictorial-news-section">
+
+    <h3>Pictorial News</h3>
+   
+    <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/delhi_rains_1674974112847_1674981888135_1674981888135.jpeg" width="200px" alt="">
+
+    <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/ADANI-INDIA-GAUTAM-ADANI-0_1675011651023_1675011651023_1675011672003_1675011672003.JPG"  width="200px" alt="">
+
+    <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/FRANCE-REFORM-PENSIONS-31_1675022359706_1675022359706_1675022383851_1675022383851.JPG" width="200px" alt="">
+
+</div>
+        
+
+
+    </div>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
